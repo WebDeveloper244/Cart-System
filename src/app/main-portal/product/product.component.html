@@ -1,0 +1,50 @@
+<div class="container">
+    <h1 class="text-center">Welcome To My Products list</h1>
+    <div class="row">
+        <div class="col-md-4 " *ngFor="let item of dataofsevice11">
+            <div class="card mb-4 mt-5" style="width: 18rem;">
+                <img [src]="item.img2" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">{{item.title}}</h5>
+                    <p class="card-text">Some quick example text to
+                        card's content.</p>
+                    <h3>{{item.qty}}</h3><span *ngIf="item.qty!==0"><i class="fa-solid fa-check text-primary"></i>
+                        <h4>{{item.qty !==0 ? 'In Stock': ''}}</h4>
+                    </span>
+                    <span *ngIf="item.qty === 0"><i class="fa-solid fa-xmark text-danger"></i>
+                        <h4>{{item.qty ===0 ? 'Out Of Stock': ''}}</h4>
+                    </span>
+                    <button type="button" (click)="goToCartPage(item.id)" [disabled]="item.qty === 0 " routerLink="/"
+                        class="btn btn-outline-success w-100">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- 1st
+ sab say pahlay ap nay ak button banana hay r us par function lagana haa ( goToCartPage (item.id) ) r argument bhi pass karnaa hay (item.id) ab is ki t/s ma bhi is function ko call karna hay with
+ argument ( goToCartPage (variable : any) ) variable ap koi bhi laa saktay hain (eg (Id:any)))
+
+ -->
+<!-- 2nd 
+ ab ap nay router import karnaa hay through dependecy injection in constructor (because ab ham click par route karwaa rahay hain)
+
+ -->
+<!-- 3rd
+ messanger service create karnii hay us ma ak variable create kar ka = karna hay (ReplaySubject) jo ka ak inbuilt class hay rxjs ki
+
+ is kay baad ap nay 2 function create karnayy hain send r get ka  
+
+ ab jo snd wala function hay is ko ap nay call karna hay button kay click par
+ r jo get function hay isko call karna hay cart.ts kay andar ng on it par r is ko ak variable kay let karnaa ha (eg Data:any;)
+
+ -->
+ <!-- 4th
+ ab cart.ts ma service11 ko call karnaa hay r  ak variable let kar kay us kay equal karna hay (eg Dataservice11:any=[];)
+ r phir ak filter array variable create karnaa hay  r is ko filterArray ko = eg Dataservice11:any=[];) .filter kar dainaa hay 
+ r console kar do this.filterArray 
+
+ -->
