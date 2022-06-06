@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MessangerService } from 'src/app/shared-portal/messanger.service';
+import { Service22Service } from 'src/app/shared-portal/non-volatile/service22.service';
 import { Service11Service } from 'src/app/shared-portal/service11.service';
 
 @Component({
@@ -17,7 +18,8 @@ export class CartComponent implements OnInit {
   constructor( 
 
    private _messanger:MessangerService,
-   private _Service11:Service11Service
+   private _Service11:Service11Service,
+   private service223:Service22Service
  
   ) { 
     this._messanger.getMessageFromMyData().subscribe((datafrommesssanger:any)=>{
@@ -35,11 +37,15 @@ export class CartComponent implements OnInit {
 }
 
 getdatafromservice11(){
-  this.service11data  = this._Service11.getjsonData();
- this.filterdata = this.service11data.filter((Result:any)=>{
-
-  return (Result.id === this.Data)
- })
+  const Id = this.service223.getDataToLocalStorage();
+  
+  if(Id === undefined){
+    this.service11data  = this._Service11.getjsonData();
+    this.filterdata = this.service11data.filter((Result:any)=>{
+   
+     return (Result.id === this.Data)
+  })
+ }
  console.log(this.filterdata);
 }
 };

@@ -1,1 +1,11 @@
 <p>cart works!</p>
+
+<div class="container" >
+    <div class="row">
+        <div class="col-md-4">
+            <img  *ngFor="let item of filterdata[0].image" alt="" [src]="item">
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
