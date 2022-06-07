@@ -37,15 +37,20 @@ export class CartComponent implements OnInit {
 }
 
 getdatafromservice11(){
-  const Id = this.service223.getDataToLocalStorage();
   
-  if(Id === undefined){
-    this.service11data  = this._Service11.getjsonData();
+  this.service11data  = this._Service11.getjsonData();
+  
+  if(this.Data === undefined){
+    const Id = this.service223.getDataToLocalStorage();
     this.filterdata = this.service11data.filter((Result:any)=>{
-   
-     return (Result.id === this.Data)
-  })
+     return (Result.id === Id)
+  });
+  return 
  }
+ 
+ this.filterdata = this.service11data.filter((Result:any)=>{
+  return (Result.id === this.Data)
+})
  console.log(this.filterdata);
 }
 };

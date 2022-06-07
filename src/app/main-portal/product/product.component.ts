@@ -40,8 +40,8 @@ export class ProductComponent implements OnInit {
    
  
     this.service223.setDataToLocalStorage(Id)
-   this._messanger.sendMessageFromMyData(Id)
-   this._router.navigate(['cart'])
+    this._messanger.sendMessageFromMyData(Id)
+    this._router.navigate(['cart'])
    
    
   }

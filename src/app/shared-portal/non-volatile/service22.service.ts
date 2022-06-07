@@ -7,10 +7,10 @@ export class Service22Service {
 
   constructor() { }
 
-  setDataToLocalStorage(Id:any){
-localStorage.setItem("Product-id",JSON.stringify(Id ))
+  setDataToLocalStorage(Id: any){
+    localStorage.setItem('Product-id', JSON.stringify(Id));
   }
   getDataToLocalStorage(){
-return localStorage.getItem(JSON.parse("product-id" || "{}"))
+    return JSON.parse(localStorage.getItem('product-id') || '{}');
   }
 }
