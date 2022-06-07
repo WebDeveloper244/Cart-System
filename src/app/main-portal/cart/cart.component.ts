@@ -19,7 +19,8 @@ export class CartComponent implements OnInit {
 
    private _messanger:MessangerService,
    private _Service11:Service11Service,
-   private service223:Service22Service
+   private nonvolatile:Service22Service
+   
  
   ) { 
     this._messanger.getMessageFromMyData().subscribe((datafrommesssanger:any)=>{
@@ -39,18 +40,27 @@ export class CartComponent implements OnInit {
 getdatafromservice11(){
   
   this.service11data  = this._Service11.getjsonData();
-  
+
   if(this.Data === undefined){
-    const Id = this.service223.getDataToLocalStorage();
-    this.filterdata = this.service11data.filter((Result:any)=>{
-     return (Result.id === Id)
-  });
-  return 
- }
- 
- this.filterdata = this.service11data.filter((Result:any)=>{
+   const ID = this.nonvolatile.getDataToLocalStorage()
+   this.filterdata = this.service11data.filter((Result:any)=>{
+    return (Result.id === ID)
+   })
+
+   return
+
+}
+this.filterdata = this.service11data.filter((Result:any)=>{
   return (Result.id === this.Data)
-})
- console.log(this.filterdata);
+ })
+  
+  
+  
+  
+ 
+
+
+console.log(this.filterdata);
+ 
 }
 };

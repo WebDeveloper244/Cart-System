@@ -21,7 +21,7 @@ export class ProductComponent implements OnInit {
    private _Service11 : Service11Service,
    private _router : Router,
    private _messanger : MessangerService,
-   private service223:Service22Service   ){
+   private nonvolatile :Service22Service  ){
     this.getDataFromservice()
    }
 
@@ -39,7 +39,7 @@ export class ProductComponent implements OnInit {
   goToCartPage(Id:any){
    
  
-    this.service223.setDataToLocalStorage(Id)
+    this.nonvolatile.setDataTolocalStorage(Id)
     this._messanger.sendMessageFromMyData(Id)
     this._router.navigate(['cart'])
    
