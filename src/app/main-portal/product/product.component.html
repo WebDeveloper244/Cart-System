@@ -48,7 +48,9 @@
     <div class="card-back">
       <figure>
         <div class="img-bg"></div>
-        <img class="image2"[src]="item.image[1]" alt="Brohm Lake">
+         
+        <img [src]="item.image[1]" >
+        
       </figure>
 
       <button (click)="goToCartPage(item.id)" [disabled]="item.qty === 0 " >Add To Cart</button>
