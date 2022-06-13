@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MessangerService } from 'src/app/shared-portal/messanger.service';
-import { Service22Service } from 'src/app/shared-portal/non-volatile/service22.service';
-import { Service11Service } from 'src/app/shared-portal/service11.service';
+import { MessangerService } from '../../shared-portal/messanger.service';
+
+import { Service22Service } from '../../shared-portal/non-volatile/service22.service';
+
+import { Service11Service } from '../../shared-portal/service11.service';
+
 
 
 
@@ -21,7 +24,9 @@ export class ProductComponent implements OnInit {
    private _Service11 : Service11Service,
    private _router : Router,
    private _messanger : MessangerService,
-   private nonvolatile :Service22Service  ){
+   private nonvolatile :Service22Service ){
+    
+    
     this.getDataFromservice()
    }
 
