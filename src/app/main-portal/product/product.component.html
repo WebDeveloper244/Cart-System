@@ -14,7 +14,7 @@
                     <span *ngIf="item.qty === 0"><i class="fa-solid fa-xmark text-danger"></i>
                         <h4>{{item.qty ===0 ? 'Out Of Stock': ''}}</h4>
                     </span>
-                    <button type="button" (click)="goToCartPage(item.id)" [disabled]="item.qty === 0 " 
+                    <button type="button" (click)="goToCartPage(item.id)" [disabled]="item.qty === 0" 
                         class="btn btn-outline-success w-100">Add To Cart</button>
                 </div>
             </div>

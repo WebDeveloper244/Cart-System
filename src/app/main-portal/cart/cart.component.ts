@@ -44,15 +44,15 @@ getdatafromservice11(){
   
   this.service11data  = this._Service11.getjsonData();
 
-  if(this.Data === undefined){
-   const ID = this.nonvolatile.getDataToLocalStorage()
-   this.filterdata = this.service11data.filter((Result:any)=>{
-    return (Result.id === ID)
-   })
+//   if(this.Data === undefined){
+//    const ID = this.nonvolatile.getDataToLocalStorage()
+//    this.filterdata = this.service11data.filter((Result:any)=>{
+//     return (Result.id === ID)
+//    })
 
-   return
+//    return
 
-}
+// }
 this.filterdata = this.service11data.filter((Result:any)=>{
   return (Result.id === this.Data)
  })

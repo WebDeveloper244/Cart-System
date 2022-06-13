@@ -8,10 +8,12 @@ import { ReplaySubject } from 'rxjs';
 export class MessangerService {
  subject = new ReplaySubject(1)
 
- constructor(){}
+ constructor(){
+   
+ }
 
- sendMessageFromMyData(PlayLoad:boolean){
-   this.subject.next(PlayLoad);
+ sendMessageFromMyData(cart:boolean){
+   this.subject.next(cart);
  }
 
  getMessageFromMyData(){
