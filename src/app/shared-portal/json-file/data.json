@@ -10,7 +10,7 @@
       "https://unsplash.com/photos/vraH9m7hfHU"
     ],
     "qty": 3,
-    "title": "This Is Bat"
+    "title": "Best company of Bat"
   },
   {
     "id": 2,
@@ -22,7 +22,7 @@
       "https://unsplash.com/photos/-miQCjAA3EY"
     ],
     "qty": 7,
-    "title": "This Is Ball"
+    "title": "Best Brand Of Ball"
   },
   {
     "id": 3,
@@ -34,7 +34,7 @@
       "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0Y2h8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     ],
     "qty": 0,
-    "title": "This Is Halmet"
+    "title": "Best Brand Of Watch"
   },
   {
     "id": 4,
@@ -48,7 +48,7 @@
       "https://unsplash.com/photos/Ur742-klaa4"
     ],
     "qty": 1,
-    "title": "This Is Bat"
+    "title": "Best Brand Of Cap"
   },
   {
     "id": 5,
@@ -57,11 +57,12 @@
       "https://images.unsplash.com/photo-1572983423767-fa0ff3d2bf81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhvb2R8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "https://images.unsplash.com/photo-1489972536996-943907ea1cd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGhvb2R8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "https://images.unsplash.com/photo-1489972536996-943907ea1cd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGhvb2R8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "https://images.unsplash.com/photo-1489972536996-943907ea1cd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGhvb2R8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      ""
+      "https://images.unsplash.com/photo-1489972536996-943907ea1cd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fGhvb2R8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      
     ],
+    
     "qty": 0,
-    "title": "This Is Shoes"
+    "title": "Best Brand Of Shoes"
   },
   {
     "id": 6,
@@ -72,6 +73,6 @@
       "https://images.unsplash.com/photo-1606834330324-544ea3bf3015?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM2fHxnbG92ZXN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     ],
     "qty": 6,
-    "title": "This Is Bat"
+    "title": "Best Brand Of Bat"
   }
 ]

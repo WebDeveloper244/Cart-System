@@ -373,11 +373,22 @@ button:focus+.design-container {
 /************************************  */
 
 
-/* img{
-    height: 565px;
-    margin-top: 20px;
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 2px 2px 16px;
-} */
+button:hover{
+    
+  color: #fff !important;
+  text-shadow:
+  0 0 6px #ca0404	,
+  0 0 6px #ca0404	,
+  0 0 6px #ca0404	,
+  0 0 6px #ca0404	,
+  0 0 6px #ca0404	,
+  0 0 6px #ca0404	,
+  0 0 6px #ca0404	,
+  0 0 6px #ca0404	;
+    -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+}
 

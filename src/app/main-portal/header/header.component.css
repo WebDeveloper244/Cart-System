@@ -1,3 +1,41 @@
-.fa-solid{
-    color: red;
+ul>li>a:hover{
+    
+        color: #fff !important;
+        text-shadow:
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	;
+          -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      
 }
+
+
+
+      
+/* ul>li>a:hover {
+    color: #fff;
+    text-shadow:
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff;
+      -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+  } */
+  .fa-cart-shopping{
+      font-size: 20px;
+  }
