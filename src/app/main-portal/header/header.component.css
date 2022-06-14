@@ -1,4 +1,4 @@
-ul>li>a:hover{
+.btn1:hover{
     
         color: #fff !important;
         text-shadow:
@@ -20,7 +20,7 @@ ul>li>a:hover{
 
 
       
-/* ul>li>a:hover {
+ul>li>a:hover {
     color: #fff;
     text-shadow:
     0 0 5px #0ff,
@@ -35,7 +35,53 @@ ul>li>a:hover{
         -o-transition: all 0.2s ease-out;
         -webkit-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
-  } */
-  .fa-cart-shopping{
-      font-size: 20px;
   }
+  .fa-cart-shopping{
+      
+      position: relative;
+      font-size: 30px;
+  }
+  .fa-cart-shopping>p{
+    font-size: 15px;
+    display: inline-block;
+   
+      position: absolute;
+    right: 9px;
+    bottom: 4px;
+  }
+  /* .fa-cart-shopping{
+    
+    color: #fff !important;
+    text-shadow:
+    0 0 6px #6eca04	,
+    0 0 6px #6eca04	,
+    0 0 6px #6eca04	,
+    0 0 6px #6eca04	,
+    0 0 6px #6eca04	,
+    0 0 6px #6eca04	,
+    0 0 6px #6eca04	,
+    0 0 6px #6eca04	;
+      -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  
+} */
+  .fa-cart-shopping>p{
+    
+        color: #fff !important;
+        text-shadow:
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	,
+        0 0 6px #ca0404	;
+          -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      
+}
