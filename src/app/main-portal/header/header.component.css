@@ -36,17 +36,17 @@ ul>li>a:hover {
         -webkit-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
   }
-  .fa-cart-shopping{
+  .fa-cart-arrow-down{
       
       position: relative;
       font-size: 30px;
   }
-  .fa-cart-shopping>p{
-    font-size: 15px;
+  .fa-cart-arrow-down>p{
+    font-size: 11px;
     display: inline-block;
    
       position: absolute;
-    right: 9px;
+    right: 11px;
     bottom: 4px;
   }
   /* .fa-cart-shopping{
@@ -67,7 +67,7 @@ ul>li>a:hover {
     transition: all 0.2s ease-out;
   
 } */
-  .fa-cart-shopping>p{
+  .fa-cart-arrow-down>p{
     
         color: #fff !important;
         text-shadow:
