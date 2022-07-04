@@ -8,6 +8,11 @@ import { HeaderComponent } from './main-portal/header/header.component';
 import { ProductComponent } from './main-portal/product/product.component';
 import { SigninFormComponent } from './forms/signin-form/signin-form.component';
 import { LoginFormComponent } from './forms/login-form/login-form.component';
+import { AdminDefaultModule } from './AdminPortal/admin-default/admin-default.module';
+import { CreateProductComponent } from './AdminPortal/AdminComponent/create-product/create-product.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -16,11 +21,17 @@ import { LoginFormComponent } from './forms/login-form/login-form.component';
     ProductComponent,
     CartComponent,
     SigninFormComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    CreateProductComponent,
+    
+   
+   
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminDefaultModule
   ],
   providers: [],
   bootstrap: [AppComponent]

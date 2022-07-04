@@ -18,7 +18,13 @@ export class CartComponent implements OnInit {
   service11data:any=[]
   cartQuantity:any=0;
   productQuantity:any;
-  show:boolean=false
+  show:boolean=false;
+  cartArray:any=[];
+  newCartArray:any=[]
+  selectedQuantity=0
+  localstorageCartArray: any=[];
+  
+ 
  
 
   constructor( 
@@ -63,22 +69,84 @@ this.filterdata = this.service11data.filter((Result:any)=>{
 console.log(this.filterdata);
  
 }
-addition(){
+
+
+
+
+
+
+
+addition() {
   if(this.cartQuantity >= this.productQuantity){
-    
+
     return
   }
-  this.cartQuantity++
-  this.show=true;
- 
- 
+  // this.cartQuantity++
+  // this.show=true;
+
+  const cartObjectPlus = this.nonvolatile.getProductToLocalStorage();
+
+
+
+  if(Object.entries(cartObjectPlus).length === 0) {
+    this.cartArray.push(this.filterdata[0]);
+    this.nonvolatile.addProductToLocalStorage(this.cartArray);
+    this.nonvolatile.setcartQuantity(this.cartQuantity);
+    this.Data = undefined
+    this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
+    return
+   
+  }
+
+  if(Object.entries(cartObjectPlus).length !==0 && this.Data !== undefined){
+     this.newCartArray.push(this.filterdata[0]);
+     cartObjectPlus.forEach((element:any)=>{
+        this.newCartArray.push(element)
+     });
+     this.nonvolatile.setDataTolocalStorage(this.newCartArray);
+     this.Data = undefined;
+     this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage()
+  }
+
+
+  cartObjectPlus.map((element:any) => {
+    if(this.filterdata[0].id === element.id){
+      element.newQuantity++;
+      this.cartQuantity++;
+      
+     
+    }
+      
+  });
+  this.nonvolatile.addProductToLocalStorage(cartObjectPlus);
+  this.nonvolatile.setcartQuantity(this.selectedQuantity)
+  this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage()
+
 }
 subract(){
+  let cartObjectPlus = this.nonvolatile.getProductToLocalStorage();
+
   if(this.cartQuantity <= 0){
     return
   }
- 
-  this.cartQuantity--
+
+  cartObjectPlus.map((element:any) => {
+    if(this.filterdata[0].id === element.id){
+      element.newQuantity++;
+      this.cartQuantity++;
+      
+     
+    }
+      
+  });
+  this.nonvolatile.addProductToLocalStorage(cartObjectPlus);
+  this.nonvolatile.setcartQuantity(this.selectedQuantity)
+  
+  
+  // this.cartQuantity--
+
+
+  
 };
 
 
@@ -92,3 +160,5 @@ subract(){
 
 
 }
+
+

@@ -1,0 +1,23 @@
+ul>li>a{
+    color: #000000;
+    
+    margin-bottom: 20px;
+}
+
+
+ul>li>a:hover {
+    color: #fff;
+    text-shadow:
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff,
+    0 0 5px #0ff;
+      -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+  }
