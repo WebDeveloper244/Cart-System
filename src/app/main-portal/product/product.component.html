@@ -32,16 +32,27 @@
     <div class="card-front">
       <figure>
         <div class="img-bg"></div>
-        <img class="image1"  [src]="item.image[0]"  alt="Brohm Lake">
+        <img class="image1"  [src]="item.image[0]"  alt="Salman Baloch">
         <figcaption>{{item.Name}}</figcaption>
       </figure>
 
       <ul>
-        <li><h5 style="color:white ;" >{{item.title}}</h5></li>
-        <li>Detail 2</li>
-        <li>Detail 3</li>
-        <li>Detail 4</li>
-        <li>Detail 5</li>
+        <!-- <li><h5 style="color:white;">{{item.title}}</h5></li> -->
+        <li><h5 class="text-white">Total Quantity</h5></li>
+        <li><h4>{{item.qty}}</h4></li>
+
+        <li>
+          <span *ngIf="item.qty!==0"><i class="fa-solid fa-square-check text-primary"></i>
+          </span>
+
+          <span *ngIf="item.qty === 0"><i class="fa-solid fa-rectangle-xmark text-danger"></i>
+         </span>
+      </li>
+
+        <li>
+          <h4 class="text-white">{{item.qty !==0 ? 'In Stock': ''}}</h4>
+          <h4 class="text-danger">{{item.qty ===0 ? 'Out Of Stock': ''}}</h4>
+        </li>
       </ul>
     </div>
 
@@ -53,7 +64,7 @@
         
       </figure>
 
-      <button class="btn2" (click)="goToCartPage(item.id)" [disabled]="item.qty === 0 " >Add To Cart</button>
+      <button class="btn2" (click)="goToCartPage(item.id)" [disabled]="item.qty === 0" >Add To Cart</button>
 
       <div class="design-container">
         <span class="design design--1"></span>

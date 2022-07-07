@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Service11Service } from 'src/app/shared-portal/service11.service';
 
 @Component({
   selector: 'app-product-analytics',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductAnalyticsComponent implements OnInit {
 
-  constructor() { }
+  AllProduct:any=[];
+
+  constructor(
+    private JsonData:Service11Service
+  ) {
+    this.products()
+   }
 
   ngOnInit(): void {
+  }
+
+  products(){
+    this.AllProduct = this.JsonData.getjsonData()
   }
 
 }

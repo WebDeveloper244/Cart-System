@@ -391,4 +391,10 @@ button:hover{
   transition: all 0.2s ease-out;
 
 }
+.fa-rectangle-xmark{
+  font-size: 20px;
+}
+.fa-square-check{
+  font-size: 20px;
+}
 
