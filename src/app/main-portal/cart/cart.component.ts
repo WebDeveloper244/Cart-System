@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MessangerService } from '../../shared-portal/messanger.service';
-
-
-
 import { Service22Service } from '../../shared-portal/non-volatile/service22.service';
 import { Service11Service } from '../../shared-portal/service11.service';
 
