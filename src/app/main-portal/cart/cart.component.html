@@ -1,23 +1,46 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
+            <h1>Name: {{filterdata[0].Name}}</h1>
+                <h3>Quantity: {{filterdata[0].qty}}</h3>
             <img *ngFor="let item of filterdata[0].image" [src]="item" alt="" srcset="">
         </div>
        
         <div class="col-md-5">
+
+            <div class="container bg-dark text-white">
+                <div *ngIf="showBox===false">
+                    <h3 class="text-danger">Nothing Has Selected</h3>
+                </div>
+                <div *ngIf="showBox===true">
+                    <div *ngFor="let _Data of localstorageCartArray">
+                        <img [src]="_Data[0].image" alt="" class="w-25 h-25">
+                        <p>SelectedQuantity:{{_Data.newQuantity}}</p>
+                    </div>
+                    <p>TotalCartQuantity:{{cartQuantity}}</p>
+                </div>
+                
+            </div>
             
             <div class="box">
                 <button type="button" class="btn1 " (click)="addition()" >+</button>
-            <span class="ms-2 me-2">{{cartQuantity}}</span>
+            <span class="ms-2 me-2">{{selectedQuantity}}</span>
             <button type="button" class="btn1 " (click)="subract()">-</button>
-            <div class="divi" *ngIf="show !== false" >
+            <!-- <div class="divi" *ngIf="show !== false" >
               <img [src]="filterdata[0].image[0]" alt="" srcset="">
 
-                <!-- <button type="button" class="btn2 " (click)="addition()" >+</button>
+                <button type="button" class="btn2 " (click)="addition()" >+</button>
                 {{cartQuantity}}
                 <button type="button" class="btn2 " (click)="subract()">-</button> -->
+            <!-- </div> -->
+
+            
             </div>
-            </div>
+           
+           
+
+
+
         </div>
         
         <div class="col-md-3"></div>

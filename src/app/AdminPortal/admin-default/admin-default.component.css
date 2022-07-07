@@ -1,7 +1,13 @@
+.navbar{
+  background: #11008a;
+}
+
+
 ul>li>a{
-    color: #000000;
+    color: #ffffff;
     
-    margin-bottom: 20px;
+    
+    /* margin-bottom: 20px; */
 }
 
 
@@ -20,4 +26,8 @@ ul>li>a:hover {
         -o-transition: all 0.2s ease-out;
         -webkit-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
+  }
+
+  .sidebar{
+    background: #0800ff;
   }

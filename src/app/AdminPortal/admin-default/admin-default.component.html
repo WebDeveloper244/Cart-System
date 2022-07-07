@@ -1,6 +1,6 @@
 
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+<header class="navbar navbar-dark sticky-top  flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 x  " href="#">Admin-Pannel</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,43 +14,56 @@
   
   <div class="container-fluid">
     <div class="row">
-      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse bg-primary">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse ">
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" routerLink="./Dashboard">
                 <span data-feather="home"></span>
-                Dashboard
+                <i class="fa-solid fa-gauge-high me-2"></i> Dashboard
+                <hr>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="./User-list">
                 <span data-feather="file"></span>
-                User-List
+                <i class="fa-solid fa-list me-2"></i> User-List
+                <hr>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLink="./create-product">
                 <span data-feather="shopping-cart"></span>
-               Create-Products
+                <i class="fa-solid fa-cart-arrow-down me-2"></i>Create-Products
+               <hr>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="./Product-Analytics">
+                <span data-feather="shopping-cart"></span>
+                Product-Analytics
+               <hr>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="users"></span>
-                Customers
+                <i class="fa-solid fa-users me-2"></i> Customers
+                <hr>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="bar-chart-2"></span>
-                Reports
+                <i class="fa-solid fa-chart-line me-2"></i> Reports
+                <hr>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="layers"></span>
-                Integrations
+                <i class="fa-solid fa-gears me-2"></i> Integrations
+                <hr>
               </a>
             </li>
           </ul>
@@ -66,18 +79,21 @@
               <a class="nav-link" href="#">
                 <span data-feather="file-text"></span>
                 Current month
+                <hr>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file-text"></span>
                 Last quarter
+                <hr>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file-text"></span>
                 Social engagement
+                <hr>
               </a>
             </li>
             <li class="nav-item">

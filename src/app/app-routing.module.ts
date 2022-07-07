@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminDefaultComponent } from './AdminPortal/admin-default/admin-default.component';
 import { CreateProductComponent } from './AdminPortal/AdminComponent/create-product/create-product.component';
 import { DashboardComponent } from './AdminPortal/AdminComponent/dashboard/dashboard.component';
+import { ProductAnalyticsComponent } from './AdminPortal/AdminComponent/product-analytics/product-analytics.component';
 import { UserListComponent } from './AdminPortal/AdminComponent/user-list/user-list.component';
 import { SigninFormComponent } from './forms/signin-form/signin-form.component';
 import { CartComponent } from './main-portal/cart/cart.component'; 
@@ -36,6 +37,7 @@ children: [
 {path:'Dashboard',component:DashboardComponent},
 {path:'User-list',component:UserListComponent},
 {path:'create-product',component:CreateProductComponent},
+{path:'Product-Analytics',component:ProductAnalyticsComponent},
 
 ]}
 ];

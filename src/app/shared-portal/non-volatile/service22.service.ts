@@ -21,10 +21,10 @@ localStorage.setItem("product-id", JSON.stringify(Id));
   }
 
   setcartQuantity(Quantity:any){
-    localStorage.setItem("User-cart" , JSON.stringify(Quantity));
+    localStorage.setItem("User-total-Quantity" , JSON.stringify(Quantity));
   }
   getcartQuantity(){
-   return  JSON.parse(localStorage.getItem("User-Cart") || "{}");
+   return  JSON.parse(localStorage.getItem("User-total-Quantity") || "{}");
   }
 
 }

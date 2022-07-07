@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Service11Service } from 'src/app/shared-portal/service11.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  TotalProduct:any=[];
+
+  constructor(
+    private JsonData:Service11Service,
+  ) { 
+    this.Products()
+  }
 
   ngOnInit(): void {
+  }
+
+  Products(){
+    this.TotalProduct = this.JsonData.getjsonData();
   }
 
 }

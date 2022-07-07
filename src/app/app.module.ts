@@ -14,6 +14,7 @@ import { CreateProductComponent } from './AdminPortal/AdminComponent/create-prod
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { CreateProductComponent } from './AdminPortal/AdminComponent/create-prod
     SigninFormComponent,
     LoginFormComponent,
     CreateProductComponent,
+    
     
    
    

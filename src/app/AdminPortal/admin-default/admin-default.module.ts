@@ -5,6 +5,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { DashboardComponent } from '../AdminComponent/dashboard/dashboard.component';
 import { UserListComponent } from '../AdminComponent/user-list/user-list.component';
+import { ProductAnalyticsComponent } from '../AdminComponent/product-analytics/product-analytics.component';
 
 
 
@@ -13,6 +14,7 @@ import { UserListComponent } from '../AdminComponent/user-list/user-list.compone
     AdminDefaultComponent,
     DashboardComponent,
     UserListComponent,
+    ProductAnalyticsComponent,
   ],
   imports: [
     CommonModule,

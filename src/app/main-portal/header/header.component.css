@@ -18,7 +18,9 @@
 }
 
 
-
+ul>li>a{
+  color: #ffff;
+}
       
 ul>li>a:hover {
     color: #fff;
@@ -36,6 +38,23 @@ ul>li>a:hover {
         -webkit-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
   }
+
+.navbar{
+  background: #0f07ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   .fa-cart-arrow-down{
       
       position: relative;
@@ -49,24 +68,7 @@ ul>li>a:hover {
     right: 11px;
     bottom: 4px;
   }
-  /* .fa-cart-shopping{
-    
-    color: #fff !important;
-    text-shadow:
-    0 0 6px #6eca04	,
-    0 0 6px #6eca04	,
-    0 0 6px #6eca04	,
-    0 0 6px #6eca04	,
-    0 0 6px #6eca04	,
-    0 0 6px #6eca04	,
-    0 0 6px #6eca04	,
-    0 0 6px #6eca04	;
-      -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
   
-} */
   .fa-cart-arrow-down>p{
     
         color: #fff !important;
