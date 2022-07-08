@@ -1,14 +1,37 @@
 <div class="container mt-5">
-    <form>
+    <form (ngSubmit)="submitProductForm()" [formGroup]="productForm">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Name</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="Name"> 
+          <div class="error  text-danger"
+          *ngIf="productForm.controls['Name'].invalid && (productForm.controls['Name'].dirty || productForm.controls['Name'].touched)">
+          <span *ngIf="productForm.controls['Name'].errors.minlength || productForm.controls['Name'].errors.maxlength ">
+            <small>Name between 4 to 20 Characters!</small></span>
+          <span *ngIf="(productForm.controls['Name'].errors.pattern)">
+            Only Alphabets & Spaces Allowed</span>
+          <span *ngIf="productForm.controls['Name'].errors.required">
+            <small>Field Required!</small>
+          </span>
+        </div>
+       
+        
+
+        </div>
          
-        </div>
+        
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputPassword1" formControlName="Email">
         </div>
+        <div>
+
+        </div>
+        
+
+
+
+
+
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>

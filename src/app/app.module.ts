@@ -9,7 +9,7 @@ import { ProductComponent } from './main-portal/product/product.component';
 import { SigninFormComponent } from './forms/signin-form/signin-form.component';
 import { LoginFormComponent } from './forms/login-form/login-form.component';
 import { AdminDefaultModule } from './AdminPortal/admin-default/admin-default.module';
-import { CreateProductComponent } from './AdminPortal/AdminComponent/create-product/create-product.component';
+
 
 
 
@@ -22,13 +22,7 @@ import { CreateProductComponent } from './AdminPortal/AdminComponent/create-prod
     ProductComponent,
     CartComponent,
     SigninFormComponent,
-    LoginFormComponent,
-    CreateProductComponent,
-    
-    
-   
-   
-    
+    LoginFormComponent, 
   ],
   imports: [
     BrowserModule,

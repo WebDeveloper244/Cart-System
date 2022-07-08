@@ -6,6 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { DashboardComponent } from '../AdminComponent/dashboard/dashboard.component';
 import { UserListComponent } from '../AdminComponent/user-list/user-list.component';
 import { ProductAnalyticsComponent } from '../AdminComponent/product-analytics/product-analytics.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateProductComponent } from '../AdminComponent/create-product/create-product.component';
 
 
 
@@ -15,11 +17,14 @@ import { ProductAnalyticsComponent } from '../AdminComponent/product-analytics/p
     DashboardComponent,
     UserListComponent,
     ProductAnalyticsComponent,
+    CreateProductComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class AdminDefaultModule { }

@@ -39,9 +39,9 @@ export class CartComponent implements OnInit {
       })
       this.getdatafromservice11();
       this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
-      // if(Object.entries(this.localstorageCartArray).length !== 0){
-      //   this.showBox = true;
-      // }
+      if(Object.entries(this.localstorageCartArray).length !== 0){
+        this.showBox = true;
+      }
       
       
       
