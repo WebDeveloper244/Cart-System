@@ -19,29 +19,30 @@
         </div>
          
         
-        <div class="mb-3">
+        <div class="">
           <label for="exampleInputPassword1" class="form-label">Email</label>
           <input type="email" class="form-control" id="exampleInputPassword1" formControlName="Email">
         </div>
         <div class="error text-danger"
         *ngIf="productForm.controls['Email'].invalid && (productForm.controls['Email'].dirty || productForm.controls['Email'].touched)">
-          <span *ngIf="productForm.controls['Email'].error.email">
+          <span *ngIf="productForm.controls['Email'].errors.email">
             <small>Enter valid Email example@gmail.com</small>
           </span>
           <span *ngIf="productForm.controls['Email'].errors.required">
-            <small>Field Required!</small>
+            Field Required!
           </span>
         </div>
+
+
+
+      
         
 
-
-
-
-
-        <div class="mb-3 form-check">
+        <div class="mt-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 </div>
+ 

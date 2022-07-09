@@ -9,7 +9,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 .container{
-margin-left: 15%;
+max-width: 80%;
+margin: auto;
 }
 
 /* default */
@@ -396,5 +397,9 @@ button:hover{
 }
 .fa-square-check{
   font-size: 20px;
+}
+@media screen and (min-width: 1212px) {
+
+
 }
 

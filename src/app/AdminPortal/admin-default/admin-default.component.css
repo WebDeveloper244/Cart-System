@@ -31,3 +31,13 @@ ul>li>a:hover {
   .sidebar{
     background: #0800ff;
   }
+  /* @media screen and (min-width: 768px){
+    .sidebar{
+      display: inlineblock;
+      min-width: 10%;
+    }
+    .box{
+      display: inlineblock;
+     min-width: 90%;
+    }
+  } */
