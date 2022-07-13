@@ -1,6 +1,4 @@
-.container{
-    margin-right: 10vh;
-}
+
 
 img{
    margin-top: 20px;
@@ -14,9 +12,56 @@ img{
     height: 40px;
     border: 1px solid black;
     background: #ffff;
-    margin-top: 40vh;
+    margin-top: 10vh;
     /* margin-left: 20px;
     margin-right: 20px; */
+}
+.c1{
+    color: red;
+    background-color: black;
+  }
+.boxshow{
+    margin-top: 176px;
+    background: #0f07ff;
+    
+}
+.boxshow img{
+    margin-left: 22vh;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    box-shadow: none;
+    
+}
+.boxshow span p {
+    
+    color: #ffff !important;
+    text-shadow:
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	;
+    /* 0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	,
+    0 0 6px #ca0404	; */
+      -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    display: inline-block;
+    
+  
+}
+.boxshow span{
+   color: rgb(255, 255, 255);
+   text-align: center;
+   font-weight: 500;
+    
 }
 .box{
     margin-left: 20%;

@@ -8,41 +8,30 @@
        
         <div class="col-md-5">
 
-            <div class="container bg-dark text-white">
+            <div class="container c1 ">
                 <div *ngIf="showBox===false">
-                    <h3 class="text-danger">Nothing Has Selected</h3>
+                    <h3 class="text-center">Nothing Has Selected</h3>
                 </div>
+            </div>
+            
+
+            <div class="container boxshow ">
                 <div *ngIf="showBox===true">
                     <div *ngFor="let _Data of localstorageCartArray">
-                        <img [src]="_Data[0].image" alt="" class="w-25 h-25">
-                        <p>SelectedQuantity:{{_Data.newQuantity}}</p>
+                        <img [src]="_Data.image[0]" alt="" class="w-25 h-25">
+                        <span class="">SelectedQuantity: <p class="ms-1">{{_Data.newQuantity}}</p></span>
                     </div>
-                    <p>TotalCartQuantity:{{cartQuantity}}</p>
+                    <span class=""> TotalCartQuantity: <p class="ms-1">{{totalQuantity}}</p></span>
                 </div>
-                
             </div>
-            
             <div class="box">
-                <button type="button" class="btn1 " (click)="addition()" >+</button>
+                <button type="button" class="btn1" (click)="addition()" >+</button>
             <span class="ms-2 me-2">{{selectedQuantity}}</span>
-            <button type="button" class="btn1 " (click)="subract()">-</button>
-            <!-- <div class="divi" *ngIf="show !== false" >
-              <img [src]="filterdata[0].image[0]" alt="" srcset="">
-
-                <button type="button" class="btn2 " (click)="addition()" >+</button>
-                {{cartQuantity}}
-                <button type="button" class="btn2 " (click)="subract()">-</button> -->
-            <!-- </div> -->
-
-            
+            <button type="button" class="btn1" (click)="subract()">-</button>
             </div>
-           
-           
-
-
-
         </div>
         
         <div class="col-md-3"></div>
     </div>
+
 </div>

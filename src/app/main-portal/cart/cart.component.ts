@@ -13,7 +13,7 @@ export class CartComponent implements OnInit {
   clickData:any;
   filterdata:any=[]
   service11data:any=[]
-  cartQuantity:any=0;
+  totalQuantity:any=0;
   productQuantity:any;
   show:boolean=false;
   showBox:boolean=false;
@@ -21,6 +21,7 @@ export class CartComponent implements OnInit {
   newCartArray:any=[]
   selectedQuantity=0
   localstorageCartArray: any=[];
+ 
   
  
  
@@ -38,10 +39,10 @@ export class CartComponent implements OnInit {
       this.clickData = datafrommesssanger; 
       })
       this.getdatafromservice11();
-      this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
-      if(Object.entries(this.localstorageCartArray).length !== 0){
-        this.showBox = true;
-      }
+      // this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
+      // if(Object.entries(this.localstorageCartArray).length !== 0){
+      //   this.showBox = true;
+      
       
       
       
@@ -74,29 +75,24 @@ console.log(this.filterdata);
  
 }
 
-
-
-
-
-
-
 addition() {
-  this.showBox === true;
+  this.showBox = true;
   const cartObjectPlus = this.nonvolatile.getProductToLocalStorage();
   if(this.selectedQuantity >= this.productQuantity){
 
     return
   }
-  // this.cartQuantity++
-  // this.show=true;
+  
 
   if(Object.entries(cartObjectPlus).length === 0) {
     this.cartArray.push(this.filterdata[0]);
     this.nonvolatile.addProductToLocalStorage(this.cartArray);
-    this.nonvolatile.setcartQuantity(this.selectedQuantity++);
+    // this.nonvolatile.settotalQuantity(this.selectedQuantity++);
     this.clickData = undefined;
     this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
     return
+    
+    
    
   }
 
@@ -107,7 +103,7 @@ addition() {
      });
      this.nonvolatile.addProductToLocalStorage(this.newCartArray);
      this.clickData = undefined;
-    //  this.localstorageCartArray = this.nonvolatile.setcartQuantity(this.selectedQuantity++)
+   
      this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
      return
   }
@@ -118,13 +114,15 @@ addition() {
       element.newQuantity++;
       this.selectedQuantity++;
       
+      
      
     }
       
   });
   this.nonvolatile.addProductToLocalStorage(cartObjectPlus);
-  this.nonvolatile.setcartQuantity(this.cartQuantity)
-  this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage()
+  this.nonvolatile.setcartQuantity(this.totalQuantity);
+  this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
+ 
 
 }
 subract(){
@@ -144,7 +142,7 @@ subract(){
       
   });
   this.nonvolatile.addProductToLocalStorage(cartObjectPlus);
-  this.nonvolatile.setcartQuantity(this.selectedQuantity);
+  this.nonvolatile.setcartQuantity(this.totalQuantity)
  
 }
 

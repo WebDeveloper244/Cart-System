@@ -14,7 +14,7 @@ localStorage.setItem("product-id", JSON.stringify(Id));
     return JSON.parse(localStorage.getItem("product-id") || '{}');
   }
   addProductToLocalStorage(data:any){
-    localStorage.setItem("User-cart" , JSON.stringify(data));
+    localStorage.setItem("User-Cart" , JSON.stringify(data));
   }
   getProductToLocalStorage(){
    return  JSON.parse(localStorage.getItem("User-Cart") || "{}");
