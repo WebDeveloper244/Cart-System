@@ -21,10 +21,8 @@ export class CartComponent implements OnInit {
   newCartArray:any=[]
   selectedQuantity=0
   localstorageCartArray: any=[];
- 
+ salman:any;
   
- 
- 
 
   constructor( 
 
@@ -87,7 +85,6 @@ addition() {
   if(Object.entries(cartObjectPlus).length === 0) {
     this.cartArray.push(this.filterdata[0]);
     this.nonvolatile.addProductToLocalStorage(this.cartArray);
-    // this.nonvolatile.settotalQuantity(this.selectedQuantity++);
     this.clickData = undefined;
     this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
     return
@@ -103,7 +100,6 @@ addition() {
      });
      this.nonvolatile.addProductToLocalStorage(this.newCartArray);
      this.clickData = undefined;
-   
      this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
      return
   }
@@ -113,19 +109,18 @@ addition() {
     if(this.filterdata[0].id === element.id){
       element.newQuantity++;
       this.selectedQuantity++;
-      
-      
-     
+    
     }
       
   });
   this.nonvolatile.addProductToLocalStorage(cartObjectPlus);
   this.nonvolatile.setcartQuantity(this.totalQuantity);
   this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
+   
  
 
 }
-subract(){
+Subract(){
   let cartObjectPlus = this.nonvolatile.getProductToLocalStorage();
 
   if(this.selectedQuantity <= 0){
@@ -142,7 +137,8 @@ subract(){
       
   });
   this.nonvolatile.addProductToLocalStorage(cartObjectPlus);
-  this.nonvolatile.setcartQuantity(this.totalQuantity)
+  this.nonvolatile.setcartQuantity(this.totalQuantity);
+  
  
 }
 

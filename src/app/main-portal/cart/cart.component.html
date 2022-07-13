@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <h1>Name: {{filterdata[0].Name}}</h1>
-                <h3>Quantity: {{filterdata[0].qty}}</h3>
+            <h1 >Name: {{filterdata[0].Name}}</h1>
+                <h3 >Quantity: {{filterdata[0].qty}}</h3>
             <img *ngFor="let item of filterdata[0].image" [src]="item" alt="" srcset="">
         </div>
        
@@ -19,7 +19,7 @@
                 <div *ngIf="showBox===true">
                     <div *ngFor="let _Data of localstorageCartArray">
                         <img [src]="_Data.image[0]" alt="" class="w-25 h-25">
-                        <span class="">SelectedQuantity: <p class="ms-1">{{_Data.newQuantity}}</p></span>
+                        <span >SelectedQuantity: <p class="ms-1">{{_Data.newQuantity}}</p></span>
                     </div>
                     <span class=""> TotalCartQuantity: <p class="ms-1">{{totalQuantity}}</p></span>
                 </div>
@@ -27,7 +27,7 @@
             <div class="box">
                 <button type="button" class="btn1" (click)="addition()" >+</button>
             <span class="ms-2 me-2">{{selectedQuantity}}</span>
-            <button type="button" class="btn1" (click)="subract()">-</button>
+            <button type="button" class="btn1" (click)="Subract()">-</button>
             </div>
         </div>
         
