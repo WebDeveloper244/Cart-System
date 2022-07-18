@@ -20,11 +20,11 @@ localStorage.setItem("product-id", JSON.stringify(Id));
    return  JSON.parse(localStorage.getItem("User-Cart") || "{}");
   }
 
-  setcartQuantity(Quantity:any){
-    localStorage.setItem("User-total-Quantity" , JSON.stringify(Quantity));
-  }
-  getcartQuantity(){
-   return  JSON.parse(localStorage.getItem("User-total-Quantity") || "{}");
-  }
+  // setcartQuantity(Quantity:any){
+  //   localStorage.setItem("User-total-Quantity" , JSON.stringify(Quantity));
+  // }
+  // getcartQuantity(){
+  //  return  JSON.parse(localStorage.getItem("User-total-Quantity") || "{}");
+  // }
 
 }

@@ -1,13 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <h1 >Name: {{filterdata[0].Name}}</h1>
+            <h1 class="text-primary productHeading">Name: {{filterdata[0].Name}}</h1>
                 <h3 >Quantity: {{filterdata[0].qty}}</h3>
             <img *ngFor="let item of filterdata[0].image" [src]="item" alt="" srcset="">
         </div>
        
         <div class="col-md-5">
-
             <div class="container c1 ">
                 <div *ngIf="showBox===false">
                     <h3 class="text-center">Nothing Has Selected</h3>

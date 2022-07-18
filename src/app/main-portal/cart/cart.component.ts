@@ -21,7 +21,7 @@ export class CartComponent implements OnInit {
   newCartArray:any=[]
   selectedQuantity=0
   localstorageCartArray: any=[];
- salman:any;
+
   
 
   constructor( 
@@ -114,7 +114,7 @@ addition() {
       
   });
   this.nonvolatile.addProductToLocalStorage(cartObjectPlus);
-  this.nonvolatile.setcartQuantity(this.totalQuantity);
+  // this.nonvolatile.setcartQuantity(this.totalQuantity);
   this.localstorageCartArray = this.nonvolatile.getProductToLocalStorage();
    
  
@@ -137,7 +137,7 @@ Subract(){
       
   });
   this.nonvolatile.addProductToLocalStorage(cartObjectPlus);
-  this.nonvolatile.setcartQuantity(this.totalQuantity);
+  // this.nonvolatile.setcartQuantity(this.totalQuantity);
   
  
 }

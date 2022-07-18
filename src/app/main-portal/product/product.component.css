@@ -1,3 +1,76 @@
+/******************************************************* Banner-Section **************************************************/
+.bgImg{
+  background-image: url('../../../assets/images/bg2.jpg');
+  height: 70vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no repeat;
+  background-size: cover;
+}
+.banner-heading{
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: #ffff;
+  text-align: center;
+  padding-top: 13%;
+}
+.text{
+  font-weight: bolder;
+  font-size: 48px;
+  
+}
+.blue{
+  color: #0f07ff;
+}
+
+
+
+/******************************************************* /Banner-Section ***************************************************/
+
+
+/******************************************************* /Product-categories ***************************************************/
+h2{
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: #ffff;
+  text-align: center;
+  color: #000000;
+  margin-top: 40px;
+ 
+}
+.product-Heading span{
+  color: #0f07ff;
+  font-weight: bolder;
+ 
+}
+
+/******************************************************* /Product-categories ***************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************  */
+
+
 /* 
     ================================
         Best Viewed In Full Page
@@ -7,11 +80,6 @@
 /* Hover over a card to flip, can tab too. */
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
-.container{
-max-width: 80%;
-margin: auto;
-}
 
 /* default */
 *,
@@ -24,8 +92,8 @@ margin: auto;
 
 /* body */
 body {
-  max-height: 100vh;
-  padding: 40px;
+  /* min-height: 100vh;
+  padding: 40px; */
 
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +103,13 @@ body {
   background: hsl(220, 10%, 12%);
   font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
 }
+.container{
+  max-width: 80%;
+  margin: auto;
+  }
+  /* .c4{
+    margin-left: -60px;
+  } */
 
 /* .flip-card-container */
 .flip-card-container {
@@ -117,10 +192,9 @@ figure,
 }
 
 /* img */
-.image1 {
+img {
   height: 100%;
   border-radius: 24px;
-  
 }
 
 /* figcaption */
@@ -371,9 +445,9 @@ button:focus+.design-container {
   font-size: 16px;
   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 }
-/************************************  */
 
 
+  /************************************  */
 button:hover{
     
   color: #fff !important;

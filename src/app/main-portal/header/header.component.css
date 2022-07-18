@@ -46,6 +46,10 @@ ul>li>a:hover {
 
 .navbar{
   background: #0f07ff;
+  /* position: fixed;
+  width: 100%;
+  margin-bottom: 20px;
+  z-index: 9; */
 }
 
 

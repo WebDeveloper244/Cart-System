@@ -15,6 +15,7 @@ import { AdminDefaultModule } from './AdminPortal/admin-default/admin-default.mo
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { AdminDefaultModule } from './AdminPortal/admin-default/admin-default.mo
     ProductComponent,
     CartComponent,
     SigninFormComponent,
-    LoginFormComponent, 
+    LoginFormComponent,
+    
   ],
   imports: [
     BrowserModule,
