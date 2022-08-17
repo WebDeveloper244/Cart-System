@@ -33,6 +33,8 @@ export class ProductComponent implements OnInit {
 
    getDataFromservice(){
      this.dataofsevice11 = this._Service11.getjsonData()
+     console.log(this.dataofsevice11);
+     
      
      
    }

@@ -5,6 +5,7 @@ import { CreateProductComponent } from './AdminPortal/AdminComponent/create-prod
 import { DashboardComponent } from './AdminPortal/AdminComponent/dashboard/dashboard.component';
 import { ProductAnalyticsComponent } from './AdminPortal/AdminComponent/product-analytics/product-analytics.component';
 import { UserListComponent } from './AdminPortal/AdminComponent/user-list/user-list.component';
+import { LoginFormComponent } from './forms/login-form/login-form.component';
 import { SigninFormComponent } from './forms/signin-form/signin-form.component';
 import { AboutUsComponent } from './main-portal/about-us/about-us.component';
 import { CartComponent } from './main-portal/cart/cart.component'; 
@@ -28,6 +29,10 @@ const routes: Routes = [
 {
   path:'sign-in',
   component:SigninFormComponent
+},
+{
+  path:'Login',
+  component:LoginFormComponent
 },
 {
   path:"about-us",

@@ -23,6 +23,7 @@ export class CreateProductComponent implements OnInit {
     this.productForm = this.formBuilder.group({
       Name:["",[Validators.required,Validators.minLength(4),Validators.maxLength(40),Validators.pattern(/^[A-Za-z]*$/)]],
       Email:["",[Validators.required,Validators.email]],
+      Quantity:["",[Validators.required,]],
       Image:['']
     })
   }

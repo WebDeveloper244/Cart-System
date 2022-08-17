@@ -12,6 +12,7 @@ import { AdminDefaultModule } from './AdminPortal/admin-default/admin-default.mo
 import { AboutUsComponent } from './main-portal/about-us/about-us.component';
 import { ContactUsComponent } from './main-portal/contact-us/contact-us.component';
 import { FooterComponent } from './main-portal/footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -35,7 +36,9 @@ import { FooterComponent } from './main-portal/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminDefaultModule
+    AdminDefaultModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

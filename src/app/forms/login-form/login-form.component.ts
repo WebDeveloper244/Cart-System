@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-form',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-form.component.css']
 })
 export class LoginFormComponent implements OnInit {
-
-  constructor() { }
+  productForm:any | FormGroup;
+  constructor(
+    private formBuilder:FormBuilder
+  ) {
+    this.productFormBuilder();
+   }
 
   ngOnInit(): void {
+  }
+  productFormBuilder(){
+    this.productForm = this.formBuilder.group({
+      Name:["",[Validators.required,Validators.minLength(4),Validators.maxLength(40),Validators.pattern(/^[A-Za-z]*$/)]],
+      // Email:["",[Validators.required,Validators.email]],
+      Password:["",[Validators.required,Validators.minLength(4),Validators.maxLength(10)]],
+      Image:['']
+    })
+  }
+  submitProductForm(){
+
+
   }
 
 }
